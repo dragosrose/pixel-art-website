@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Pixel Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header><h1>Contact Us</h1></header>
+
+    <div class = "rightnav">
+        <button class = "button" id="menu">
+            <p>Meniu</p>
+        </button>
+        <div class = "dropdown-content">
+            <a href="about.html">About</a>
+            <a href="who.html">Who</a>
+            <a href="contactus.html">Contact us</a>
+            <a href="index.html">Back to site</a>
+        </div>
+        
+    </div>
+
+    <div class = "main">
+        <div class = "grid-container">
+            <div>
+                <form action= "/user" method="GET" name= "form" action="" onsubmit="return validateForm()">
+                    <label for="user_name">Name:</label><br>
+                    <input type="text" id="name" name="user_name" placeholder="Name"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email" placeholder="Email"><br>
+                    <label for="subject">Subject:</label><br>
+                    <input type="text" id="subject" name="subject" placeholder="Subject"><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" placeholder="Message"></textarea><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+                
+            </div>
+        </div>
+    </div>
+    
+    <script src="form.js"></script>
+    <script src="server.js"></script>
+
+</body>
+</html>

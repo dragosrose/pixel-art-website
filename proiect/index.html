@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home | Pixel Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+
+
+<body ondragstart="return false;" ondrop="return false;">
+    
+    <div class = "rightnav">
+        <button class = "button" id="menu">
+           <p>Meniu</p> 
+        </button>
+        <div class = "dropdown-content">
+            <a href="about.html">About</a>
+            <a href="who.html">Who</a>
+            <a href="contactus.html">Contact us</a>
+            <a href="index.html">Back to site</a>
+        </div>
+        
+    </div>
+
+    <div class="mainBoard">
+        <h1 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">
+            Pixel art editor
+        </h1>
+        <br><br>
+        <table id = "canvas"></table>
+    </div>
+
+    
+
+    <div class="sidenav">
+        <button class="button" id="pencil" onclick="pickPencil()">
+            <img src="/imagini/pencil-64x64.png" alt="Pencil">
+        </button>
+
+        <button class="button" id="bucket" onclick="pickBucket()">
+            <img src="/imagini/paint-bucket.png" alt="Paint-Bucket">    
+        </button>
+        <br><br>
+        <button class="button" id="pipette" onclick="pickColor()">
+            <img src="/imagini/color-picker.png" alt="Pipette">
+        </button>
+        
+        </button>
+
+        <br><br>
+        Alegeti o culoare:
+        <input type="color" id="myColor">
+        <br><br>
+
+        Latime:&nbsp;&nbsp;
+        <input type="number" id="gridWidth" value="20" size="6">
+        Inaltime:
+        <input type="number" id="gridHeight" value="20" size="6">
+        <br><br>
+        <input type="submit" id="submit">
+        
+    </div>
+
+    
+
+    <script src = "script.js"></script>
+</body>
+</html>

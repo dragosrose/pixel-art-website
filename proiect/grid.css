@@ -1,0 +1,32 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.grid-container > div {
+    background-color: #fa971588;
+    text-align: left;
+    padding: 15px;
+    
+}
+
+.grid-container div > img:nth-child(1){
+    width: 40%;
+    float: right;
+    padding: 10px;
+}
+
+.grid-container div > img:nth-child(2){
+    width: 20%;
+    float: right;
+    padding: 10px;
+}
+
+.grid-container div > img:nth-child(3){
+    width: 75%;
+    float: left;
+    padding: 10px;
+}
+

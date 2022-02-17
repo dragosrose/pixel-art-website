@@ -1,0 +1,229 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    font-size: x-large;
+}
+
+body{
+    text-align: center;
+    font-family: 'VT323', monospace;
+    background: rgb(255,223,162);
+    background: linear-gradient(90deg, rgba(255,223,162,1) 0%, rgba(255,247,232,0.7344071417629552) 35%, rgba(255,252,225,0.7596172257965687) 100%);   
+}
+
+table{
+    border-collapse: collapse;
+    margin: 0 auto;
+    table-layout: fixed;
+    width: min-content;
+    
+    
+}
+
+tr,td{
+    background: #2b2a2a0a;
+    
+}
+
+tr {
+    height: 20px;
+    
+}
+
+td {
+    width: 20px;
+}
+
+table, td {
+    border: 1px solid black;
+}
+
+.sidenav img{
+    width: 40px;
+    height: auto;
+}
+
+.mainBoard{
+    margin-left:140px;
+    
+}
+
+.button{
+    position: relative;
+    border: none;
+    background-color: rgb(255, 179, 80);
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    border-style:inset;
+    
+}
+
+.button:hover{
+    background-color: #fa9715;
+    color: #ffb350;
+}
+
+.sidenav{
+    height: 100%;
+    width: 12%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 5%;
+    overflow-x: hidden;
+    background-color: rgb(255, 179, 80);
+    border: 13px outset #AF7D16;
+}
+
+.rightnav{
+    height: fit-content;
+    width: fit-content;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    background-color: rgb(255, 179, 80);
+    border: 10px outset #AF7D16;
+}
+
+.button > p {
+    width: 80px;
+    font-family: 'VT323', monospace;
+    font-size: large;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 179, 80);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a{
+    padding: 10px;
+    display: block;
+    width: 100px;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.dropdown-content a:hover{
+    background-color: #fa9715;
+}
+
+.rightnav:hover .dropdown-content{
+    display: block;
+}
+
+.rightnav:hover .button{
+    background-color: #fa9715;
+}
+
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*De aici sunt clasele pe care le folosesc in restul paginilor cu exceptia
+index.html*/
+
+
+.main{
+    float: left;
+    width: 60%;
+    margin-left: 300px;
+    height: 60%;
+    padding: 20px;
+    font-size: larger;
+    text-align: left;
+    /*border: 1px solid red;*/
+}
+
+@media screen and (max-width: 650px) {
+    .main {
+        width: 100%;
+        font-size: larger;
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    .left{
+        display: inline;
+    }
+}
+
+
+.main img{
+    width: 100%;
+    
+}
+
+
+.left{
+    float: left;
+    width: 12%;
+    margin-left: 35px;
+    position: fixed;
+    z-index: 1;
+    /*border: 1px solid red;  */  
+}
+
+.left a{
+    padding: 10px;
+    display: block;
+    width: 150px;
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    border-bottom: 1px solid black
+}
+
+.left a:hover {
+    background-color: #fa9715;
+}
+
+.left a::before{
+    content: '-';
+}
+
+.left a::after{
+    content: '-';
+}
+
+#sec-1, #sec-2, #sec-3, #sec-4, #sec-5{
+    padding: 10px;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+textarea{
+    height: 30%;
+}
+
+
+
+
+
+
+
+
