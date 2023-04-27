@@ -1,5 +1,4 @@
 # Pixel Art Editor
-Project for 1st year webdev course written in HTML, CSS and vanilla Javascript (with a little bit of Node).
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
